@@ -1,0 +1,201 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* FONTS */
+
+@font-face {
+  font-family: lordofthering;
+  src: url("font/RINGM__.TTF");
+}
+
+.h1-hero {
+  font-family: lordofthering;
+  text-transform: uppercase;
+  filter: drop-shadow(3);
+  text-shadow: 5px 2px 4px black;
+  color: #f69435 !important;
+  text-align: center;
+  margin-top: 30px;
+}
+.h2-hero {
+  font-family: lordofthering;
+  text-transform: uppercase;
+  filter: drop-shadow(3);
+  text-shadow: 5px 2px 4px black;
+  color: #f69435 !important;
+  text-align: center;
+  margin-top: 30px;
+}
+/* IMAGENES DE BACKGROUND */
+
+.container-index {
+  background-image: url("../../img/backgrounds/intro-wallpaper.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh; /* establece la altura del contenedor en el 100% del viewport */
+  width: 100%; /* establece la anchura del contenedor en el 100% del viewport */
+  margin: 0; /* asegura que no haya márgenes en el contenedor */
+  padding: 0; /* asegura que no haya relleno en el contenedor */
+  background-position: center center;
+  box-sizing: border-box;
+}
+.container-good {
+  background-image: url("../../img/backgrounds/good-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.container-evil {
+  background-image: url("../../img/backgrounds/evil-background.jpg");
+  background-size: cover;
+  background-repeat: repeat;
+}
+
+/*  BOTONES */
+
+.btnInstall,
+.btnShare {
+  background-color: #f69435 !important;
+  filter: drop-shadow(3);
+  -webkit-box-shadow: 32px 38px 85px 3px rgba(0, 0, 0, 0.54);
+  -moz-box-shadow: 32px 38px 85px 3px rgba(0, 0, 0, 0.54);
+  box-shadow: 32px 38px 85px 3px rgba(0, 0, 0, 0.54);
+}
+
+.text-hero {
+  font-family: lordofthering;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 15rem;
+  font-weight: 700;
+  color: #a3601c !important;
+  background-color: rgba(169, 169, 169, 0.76);
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.btn-evil {
+  font-size: 2rem;
+  border-color: rgb(219, 136, 27) !important;
+  border-width: 10px;
+  border-radius: 10px;
+  font-weight: 800;
+  width: 50vw;
+
+  background-color: rgba(0, 0, 0, 0.315) !important;
+}
+.btn-good {
+  font-size: 2rem;
+  border-color: rgb(178, 199, 209) !important;
+  border-width: 10px;
+  border-radius: 10px;
+  font-weight: 800;
+  width: 50vw;
+
+  background-color: rgba(0, 0, 0, 0.315) !important;
+}
+.btn-evil a {
+  font-weight: 600;
+  color: rgb(241, 239, 239) !important;
+}
+.btn-good a {
+  font-weight: 600;
+  color: rgb(241, 239, 239) !important;
+}
+
+.text-wave-good {
+  font-family: lordofthering;
+  padding: 10px;
+  background-color: rgb(219, 136, 27) !important;
+  border-width: 8px;
+  border-radius: 10px;
+  color: rgb(241, 239, 239) !important;
+}
+
+/* LOG DEL CHARACACTER */
+
+.text-adventure {
+  font-family: lordofthering;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #a3601c !important;
+  background-color: rgba(31, 30, 30, 0.664);
+  text-align: center;
+}
+
+.extensible-section {
+  height: 200px;
+  overflow-y: scroll;
+  background-color: rgba(0, 0, 0, 0.493);
+}
+
+.extensible-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.extensible-section li {
+  position: relative;
+  max-height: 200px;
+  padding: 10px;
+  border: 1px solid #dad7d7;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+.extensible-section::-webkit-scrollbar {
+  width: 8px;
+}
+
+.extensible-section::-webkit-scrollbar-thumb {
+  background-color: black;
+}
+
+.extensible-section::-webkit-scrollbar-track {
+  background-color: #e6e6e6;
+}
+
+/* BOTONES DE ACCION */
+#log-button {
+  display: flex;
+  justify-content: center;
+  margin: 5px 0;
+}
+
+.btn-action,
+#clear-log {
+  font-size: 1rem;
+  border-color: rgb(219, 136, 27) !important;
+  border-width: 5px;
+  border-radius: 10px;
+  font-weight: 400;
+  padding: 10px;
+  /*   width: 30vw;
+ */
+  background-color: rgba(0, 0, 0, 0.315) !important;
+  color: rgb(241, 239, 239) !important;
+}
+.btn-action a {
+  color: rgb(241, 239, 239) !important;
+}
+
+.election {
+  font-size: 30px;
+  color: rgb(219, 136, 27) !important;
+  border: black;
+  border-width: 5px;
+}
+
+/* CENIZAS */
+
+#particles-js {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+}

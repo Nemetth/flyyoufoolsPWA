@@ -1,0 +1,72 @@
+[
+  {
+    "id": "5cd99d4bde30eff6ebccfc15",
+    "name": "Frodo Baggins",
+    "image": "img/Frodo.jpg",
+    "race": "Hobbit",
+    "alive": true
+  },
+  {
+    "id": "5cd99d4bde30eff6ebccfea0",
+    "name": "Gandalf",
+    "image": "img/gandalf.jpg",
+    "race": "Maiar",
+    "alive": true
+  },
+  {
+    "id": "5cd99d4bde30eff6ebccfd81",
+    "name": "Legolas",
+    "image": "img/Legolas.webp",
+    "race": "Elf",
+    "alive": true
+  },
+  {
+    "id": "5cd99d4bde30eff6ebccfbe6",
+    "name": "Aragorn II Elessar",
+    "image": "img/Aragorn.jpg",
+    "race": "Human",
+    "alive": true
+  },
+  {
+    "id": "5cd99d4bde30eff6ebccfd23",
+    "name": "Gimli",
+    "image": "img/gimli.jpg",
+    "race": "Dwarf",
+    "alive": true
+  },
+  {
+    "id": "5cd99d4bde30eff6ebccfea5",
+    "name": "Sauron",
+    "image": "img/sauron.webp",
+    "race": "Maiar",
+    "alive": true
+  },
+  {
+    "id": "5cd99d4bde30eff6ebccfea4",
+    "name": "Saruman",
+    "image": "img/saruman.webp",
+    "race": "Maiar",
+    "alive": true
+  },
+  {
+    "id": "5cd9d576844dc4c55e47afee",
+    "name": "Witch-King of Angmar",
+    "image": "img/witch.webp",
+    "race": "Nazgûl",
+    "alive": true
+  },
+  {
+    "id": "5cd99d4bde30eff6ebccfe9e",
+    "name": "Gollum",
+    "image": "img/gollum.webp",
+    "race": "Hobbit",
+    "alive": true
+  },
+  {
+    "id": "5cdbdecb6dc0baeae48cfa44",
+    "name": "Shelob",
+    "image": "img/shelob.jpg",
+    "race": "Giant Spider",
+    "alive": true
+  }
+]

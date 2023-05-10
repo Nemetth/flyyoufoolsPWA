@@ -1,0 +1,31 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container-body {
+  background-image: url("../../img/backgrounds/intro-wallpaper.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.btnInstall,
+.btnShare {
+  background-color: #f69435 !important;
+}
+
+.text-hero {
+  font-family: "Yusei Magic", sans-serif;
+  text-align: center;
+  margin-top: 15rem;
+  font-weight: 700;
+  color: #d4893d !important;
+  background-color: darkgray;
+}
+
+.btnAdventure {
+}
+
+a {
+  text-decoration: none;
+}

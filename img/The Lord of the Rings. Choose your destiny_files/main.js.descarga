@@ -1,0 +1,61 @@
+window.addEventListener("DOMContentLoaded", function () {
+  if ("serviceWorker" in navigator) {
+    this.navigator.serviceWorker
+      .register("sw.js")
+      .then((res) => console.log("El Service Worker se registró correctamente"))
+      .catch((err) => console.log("El Service Worker no se pudo registrar "));
+  }
+
+  //Evento de instalación mediante un botón
+  let eventInstall;
+  let btnInstall = document.querySelector(".btnInstall");
+
+  window.addEventListener("beforeinstallprompt", (e) => {
+    e.preventDefault();
+    eventInstall = e;
+    ShowInstallButton();
+  });
+
+  //Evento de compartir mediante un botón
+  let btnShare = document.querySelector(".btnShare");
+  if (btnShare != undefined) {
+    if (this.navigator.share) {
+      btnShare.addEventListener("click", (e) => {
+        let dataShare = {
+          title: "Fly you fool!",
+          text: "How did I get here",
+          url: "http://localhost/parcial1/index.html",
+        };
+        navigator.share(dataShare).then((res) => {
+          console.log("Se puede compartir la app");
+        });
+      });
+    } else {
+      console.log("El navegador no es compatible");
+      btnShare.style.display = "none";
+    }
+  }
+
+  let ShowInstallButton = () => {
+    if (btnInstall != undefined) {
+      btnInstall.style.display = "inline-block";
+      btnInstall.addEventListener("click", InstallApp);
+    }
+  };
+
+  let InstallApp = () => {
+    if (eventInstall) {
+      eventInstall.prompt();
+      eventInstall.userChoice.then((res) => {
+        if (res.outcome == "accepted") {
+          console.log("El usuario acepto instalar la app");
+          btnInstall.style.display = "none";
+        } else {
+          console.log("El usuario no acepto instalar la app");
+        }
+      });
+    }
+  };
+});
+
+//Funciones de instalación de la app
